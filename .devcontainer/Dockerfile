@@ -25,6 +25,7 @@ RUN pip install --upgrade pip
 RUN pip install --editable ".[test, learning]"
 ## Blender setup
 #Set the default command to run Blender
+CMD ["blender"]
 
 RUN /usr/bin/python3.11 -m pip install numpy --break-system-packages
 RUN git clone https://github.com/UCL/Blender_Randomiser.git
